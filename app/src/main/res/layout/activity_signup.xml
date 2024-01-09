@@ -20,7 +20,9 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:importantForAccessibility="no"
                 android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
                 tools:srcCompat="@drawable/top_background2" />
 
             <TextView
@@ -29,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Create \nAccount"
+                android:text="@string/create_account"
                 android:textColor="#3B608C"
                 android:textSize="40sp"
                 android:textStyle="bold" />
@@ -45,10 +47,11 @@
                 android:drawableStart="@drawable/name"
                 android:drawablePadding="16dp"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:inputType="textPersonName"
                 android:padding="8dp"
-                android:textColorHint="#756C6C" />
+                android:textColorHint="#756C6C"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/editTextTextEmail"
@@ -61,10 +64,11 @@
                 android:drawableStart="@drawable/email"
                 android:drawablePadding="16dp"
                 android:ems="10"
-                android:hint="Email"
-                android:inputType="textPersonName"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
                 android:padding="8dp"
-                android:textColorHint="#756C6C" />
+                android:textColorHint="#756C6C"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/editTextTextPasswordName"
@@ -77,10 +81,11 @@
                 android:drawableStart="@drawable/password"
                 android:drawablePadding="16dp"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="8dp"
-                android:textColorHint="#756C6C" />
+                android:textColorHint="#756C6C"
+                tools:ignore="Autofill" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -89,14 +94,15 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                app:srcCompat="@drawable/btn_arrow2" />
+                app:srcCompat="@drawable/btn_arrow2"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Forget your password? Recovery it"
+                android:text="@string/forget_your_password_recovery_it"
                 android:textAlignment="center"
                 android:textColor="#3B608C"
                 android:textSize="16sp"
